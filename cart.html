@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>The shoe store!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="navbar">
+
+      <nav class="navbar  navbar-expand-lg navbar-dark">
+        <div class="container">
+
+          
+              <a class="navbar-brand " href="./index.html"><img src="./assets/header/LOGO.png" alt="LOGO"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./shop.html">KIDS </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./shop.html">MAN </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./shop.html">WOMAN </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img id="bag" src="./assets/header/bag.svg" alt="Car Shop" class="mb-4"></a>
+                  </li>
+                  
+                </ul>   
+              </div>
+        
+      </div>
+      </nav>
+
+    </section>
+    <!-- navbar -->
+    <!-- tittle -->
+   <section id="cart-tittle">
+    <div class="container fluid">
+        <div class="row">
+            <div class="col text-center pt-5 pb-3" >
+                <h2>Your shopping cart</h2>
+            </div>
+        </div>
+    </div>
+   </section>
+    <!-- tittle -->
+    <section id="cart">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <table class="table ">
+                        <thead>
+                          <tr>
+                        
+                            <th scope="col"> remove</th>
+                            <th scope="col">Img</th>
+                            <th scope="col">product</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">price</th>
+                            <th scope="col">quantity</th>
+                            <th scope="col">subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            
+                            <td><i class="bi bi-x-circle"></i></td>
+                            <td><img src="./assets/productCard/grey.png" alt="product" style=" width:80px;"></td>
+                            <td><p>Jordan-one <br><span style ="color: #bababa;">Blue-black</span> </p></td>
+                            <td><p>9</p></td>
+                            <td><p>$408</p></td>
+                            <td><input type="number" value="1" style="width: 50px;"class="pl-2" ></td>
+                            <td><p>$408 <br> <span style="color: #bababa;">Taxes included</span></p></td>
+                          </tr>
+
+                          <tr>
+                            
+                            <td><i class="bi bi-x-circle"></i></td>
+                            <td><img src="./assets/productCard/jordan-one-blue.webp" alt="product" style=" width:80px;"></td>
+                            <td><p>Jordan-one <br><span style ="color: #bababa;">Blue-black</span> </p></td>
+                            <td><p>9</p></td>
+                            <td><p>$408</p></td>
+                            <td><input type="number" value="1" style="width: 50px;"class="pl-2" ></td>
+                            <td><p>$408 <br> <span style="color: #bababa;">Taxes included</span></p></td>
+                          </tr>
+
+                          <tr>
+                            
+                            <td><i class="bi bi-x-circle"></i></td>
+                            <td><img src="./assets/productCard/green.png" alt="product" style=" width:80px;"></td>
+                            <td><p>Jordan-one <br><span style ="color: #bababa;">Blue-black</span> </p></td>
+                            <td><p>9</p></td>
+                            <td><p>$408</p></td>
+                            <td><input type="number" value="1" style="width: 50px;"class="pl-2" ></td>
+                            <td><p>$408 <br> <span style="color: #bababa;">Taxes included</span></p></td>
+                          </tr>
+                         
+                        
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            <div class="container pt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h5 class="text-center">Apply cupon</h5>
+                    <div class="row align-items-center mb-3">
+                        <div class="col p-0 offset-2 offset-md-3">
+                          <input class="form-control " type="search" placeholder="Add cupon" aria-label="Search">
+                          </div>
+                          <div class="col p-0">
+                          <button class="btn btn-success " type="submit">Apply</button>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 cart-totals">
+                    <h5 class="text-center mt-3">Card totals</h5>
+                    
+                    <table class="table">
+                        
+                        <tbody>
+                          <tr>
+                            <td >Cart subtotal</td>
+                            <td> <span style="color:#bababa ;">$1224</span></td>
+                          </tr>
+                          <tr>
+                            <td >Shipping</td>
+                            <td> <span style="color:#bababa ;">free</span></td>
+                          </tr>
+                          <tr>
+                            <td >Total</td>
+                            <td> <span style="color:#bababa ;">$1224</span></td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                      <td><button class="btn btn-primary mb-3 w-100">Checkout</button></td>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-6 col-md-4 offset-md-2 text-left pl-0 pr-0">
+            <ul>
+              <li>
+                <h7>About us</h7>
+              </li>
+              <li>
+                <h7>Location</h7>
+              </li>
+              <li>
+                <h7>Our mission</h7>
+              </li>
+              <li>
+                <h7>Careers</h7>
+              </li>
+              <li>
+                <h7>Upcoming</h7>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 offset-md-1 text-center pl-0">
+            <ul>
+              <li>
+                <h6 style="text-decoration: underline;">Connect with us</h6>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+  </body>
+</html>

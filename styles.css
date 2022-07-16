@@ -1,0 +1,245 @@
+:root{
+    /*colors*/
+    --bitcoin-orange: #f7931a;
+    --soft-orange:#ffe9d5;
+    --second-blue:#e7f5ff;
+    --warm-black: #201e1c;
+    --black:#282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+    --strong-blue: #5463FF;
+    --green--:#01793F;
+}
+
+
+
+a , p , h1 ,h2,h3,h4,h5,h6, h7 ,button, input, th, td{
+    font-family:'Contrail One', cursive;
+}
+
+/* navbar */
+#navbar img{
+    width: 300px;
+}
+@media (max-width:424px){
+#navbar img{
+        width: 200px;
+    }
+}
+#navbar #bag{
+    width: 20px;
+}
+#navbar .navbar{
+    background-color: var(--warm-black);
+}
+#navbar a{
+    color: var(--just-white);
+    font-size: 20px;
+}
+#navbar a:hover{
+    text-decoration: underline; 
+}
+/* hero */
+#hero{
+    padding-top: 90px;
+}
+@media (min-width:1024px) {
+    #hero{
+        padding-top: 80px;
+    }
+}
+@media (min-width:768px) {
+    #hero{
+        padding-top: 80px;
+    }
+}
+@media (min-width:375px) {
+    #hero{
+        padding-top: 50px;
+    }
+}
+@media (min-width:320px) {
+    #hero{
+        padding-top: 45px;
+    }
+}
+#hero .carousel-inner img{
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
+#carousel{
+    position: relative;
+}
+#hero .overlay{
+    position: absolute; 
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+#carousel .btn-primary{
+    background-color: var(--strong-blue);
+}
+
+#hero .overlay .container , 
+#hero .overlay .row{
+    height: 100%;
+}
+
+/* New arrivals */
+
+#newArrivals {
+    width: 100%;
+    background-image: url(./assets/productCard/bgArrivals.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+#newArrivals .card{
+    border-radius: 5px;
+    box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#newArrivals h2{
+ color: var(--just-white);
+ text-align: center;
+ margin-top: 20px;
+}
+#newArrivals .card-text{
+    color: var(--grey);
+}
+#newArrivals .btn{
+    border: none;
+    font-size: 20px;
+}
+
+/* special-post */
+#special-post {
+    margin-bottom: 5rem;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: var(--grey);
+    
+}
+/* newsletter */
+
+#News-Letter .p2{
+    font-size: 13px;
+}
+#News-Letter .btn {
+    background-color: var(--strong-blue);
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+#News-Letter input{
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+/* footer */
+footer{
+    background-color: var(--warm-black);
+}
+footer li{
+    color: var(--just-white);
+    list-style: none;
+
+}
+
+
+/* #####################################################################################
+shop-page */
+
+
+/* banner-woman */
+
+
+#banner-women{
+    background-image: url(./assets/shop-pages/banners/banner-woman.png);
+    height:auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 1440px) {
+    #banner-women h3{
+        font-size: 60px;
+    }
+    #banner-women {
+        height: 250px;
+    }
+}
+/* items-space */
+#items-area{
+    
+        border-style: solid;
+        border-color: var(--grey);
+        border-width: 0px 0px 1px 0px ;
+    
+}
+#items-area h5{
+    color: var(--grey);   
+}
+
+#items-area .card{
+    border-width: 0px;   
+}
+#items-area .card:hover{
+    transition: 0.5s;
+    width:95%;
+    box-shadow: 1px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#items-area h3 ,h5{
+    
+    margin-left: 20px;
+}
+
+/* single-product */
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 35%;
+    cursor: pointer;
+}
+/* acordeon */
+.accordion-item{
+    background-color: var(--just-white);
+}
+.accordion-button{
+    border-radius: 2px;
+    border-style: solid;
+    border-color: var(--grey);
+    border-width: 1px ;
+}
+.icon{
+    margin-right: 1rem;
+    float: right;
+}
+
+/* new-in  */
+#newArrivals{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: var(--grey);
+}
+#newArrivals h5{
+    margin-left: 0px;
+}
+/* cart */
+
+.cart-totals{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--grey);  
+}
