@@ -1,4 +1,3 @@
-const newArrivals= document.querySelector("#cont-newArrivals");
 
 // Id generator
 const idGenerator=()=>{
@@ -6,6 +5,7 @@ const idGenerator=()=>{
     const random= Math.floor(Math.random()*100) ;
      return random
  };
+
 
 // array productos
 const newArrivalsItems=[{
@@ -44,6 +44,7 @@ const newArrivalsItems=[{
 
 
 // render new arrivals cards
+const newArrivals= document.querySelector("#cont-newArrivals");
 
 renderProducts(newArrivalsItems);
 
@@ -66,5 +67,48 @@ renderProducts(newArrivalsItems);
         }
 };
 
+
+// array special post
+
+const specialPostsItems=[
+    {
+    id:idGenerator(),
+    img:"./assets/specialPost/Sp1.png",
+    tittle:"Jordan one",
+    subtittle:"Red-white" ,
+    para: " Eget cras orci quam fermentum egestas donec lacus lorem  Sem tristique viverra eu sed. Massa lacus, in varius pharetra massa sit egetfelis. In eget arcu, diam eu imperdiet congue nisl, ornare donec." ,
+},{
+    id:idGenerator(),
+    img:"./assets/specialPost/Sp2.png",
+    tittle:"Jordan one",
+    subtittle:"Blue-white" ,
+    para: " Eget cras orci quam fermentum egestas donec lacus lorem  Sem tristique viverra eu sed. Massa lacus, in varius pharetra massa sit egetfelis. In eget arcu, diam eu imperdiet congue nisl, ornare donec." ,
+}]
+
+// render speial post
+const specialPost = document.querySelector('#cont-specialPost');
+renderSpecialPost(specialPostsItems);
+function renderSpecialPost(arr){
+
+
+    for (post of arr){
+
+        specialPost.innerHTML+= ` 
+                    <div class=" col-md mr-md-3 mx-2 cont-img1 mb-5"  >
+                        <div class="card" >
+                        <img src="${post.img}" class="img1 card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #5463FF; font-size:18px; margin-left: 0px;" >${post.tittle}</h5>
+                            <h6 class="card-subtitle mb-2 " style="text-decoration: underline;  font-size: 20px;">${post.subtittle}</h6>
+                            <p class="card-text text-muted">${post.para}</p>
+                            
+                            <a href="./shop.html" class="card-link " style="color: #5463FF; ">Shop now! </a>
+                        </div>
+                        </div>
+                    </div>
+                    `
+                  
+        }
+};
 
 
